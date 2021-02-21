@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+    <meta charset="utf-8">
+		<title>Michael Nikonov - About me</title>
+        <link href="./css/mystyle.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="./favicon.jpg">
+	</head>
+	<body>
+        <header>
+            <div class="cap">
+                <nav>
+                    <ul>
+                        <li id="about"><a href="./about_me.html" style="text-decoration: none;">About me</a></li>
+                        <li id="terms"><a href="./terms.html"style="text-decoration: none;">Terms</a>
+                            <ul>
+                                <li><a href="./term1/term1.html"style="text-decoration: none;">Term 1</a></li>
+                                <li><a href="./term2/term2.html"style="text-decoration: none;">Term 2</a></li>
+                            </ul>
+                        </li>
+                        <li id="fbb"><a href="http://fbb.msu.ru/" target="_blank"style="text-decoration: none;">FBB MSU</a></li>
+                        <li><a href="./index.html" style="text-decoration: none;">Main page</a></li>
+                    </ul>
+                </nav>
+            </div>
+                <div class="navbar">
+                    <a href="https://kodomo.fbb.msu.ru/~w0lfgang/index.html" class="mainpgbar">To Main Page</a>
+                    <div id="links">
+                        <a href="https://kodomo.fbb.msu.ru/~w0lfgang/about_me.html">About me</a>
+                        <a href="https://kodomo.fbb.msu.ru/~w0lfgang/terms.html">Terms</a>
+                        <a href="http://fbb.msu.ru/">FBB MSU</a>
+                    </div>
+                        <a href="javascript:void(0);" class="icon" onclick="mobileNavBar()">
+                            <div style="font-size: 10vh;">≡</div>
+                        </a>
+                </div>
+        </header>
+        <div class="content" align="center">
+            <h1>About me</h1>
+            <br>
+        <table id="table" align="right">
+                <tr style="width: 45%">
+                    <td style="background-color: #7a7a7a;"<b>Michael Nikonov</b>
+                </tr>
+                <tr>
+                    <td><img src="https://sun9-12.userapi.com/c845322/v845322048/117c8/WLZnCoaRjQ0.jpg" alt="Chibi pope portrait"></td>
+                </tr>
+                <tr>
+                    <td><B>Birth</b>: 31.12.2002, Zvenigorod, Moscow region</td>
+                </tr>
+                <tr>
+                    <td><b>Death</b>: Maybe after the second examine session</td>
+                </tr>
+                <tr>
+                    <td><b>Alma mater</b>: AESC MSU, "Intellectual"</td>
+                </tr>
+                <tr>
+                    <td><b>Email</b>: <a class="mail" href="mailto:w0lfgang@fbb.msu.ru">w0lfgang@fbb.msu.ru</a></td>
+                </tr>
+            </table>
+            <table><th class="text-block">
+            <p><b> Michael Nikonov</b> (31.12.2002, Zvenigorod, Moscow region) is a freshman at the Faculty of Bioengineering and Bioinformatics, Moscow State University (FBB MSU). Graduate of the Advanced Education and Research Center (AESC) of MSU, Kolmogorov Boarding School (2018-2020). Previously studied at the "Intellectual" boarding school.</p>
+            </th></table>
+        </div>
+        <div class="background"></div>
+        <br>
+        <footer>
+            <b>&copy Michael Nikonov, 2021</b>
+        </footer>
+    <script>
+        function mobileNavBar() {
+            var x = document.getElementById("links");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+	</body>
+</html>

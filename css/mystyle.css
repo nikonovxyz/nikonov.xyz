@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: gothic; 
+    src: url(https://kodomo.fbb.msu.ru/~w0lfgang/fonts/gothic.ttf) format('truetype'),
+         url(https://kodomo.fbb.msu.ru/~w0lfgang/fonts/gothic.woff) format('woff'),
+         url(https://kodomo.fbb.msu.ru/~w0lfgang/fonts/gothic.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: unica-gravity;
+    src: url(https://kodomo.fbb.msu.ru/~w0lfgang/fonts/unica-gravity.woff) format('woff'),
+         url(https://kodomo.fbb.msu.ru/~w0lfgang/fonts/unica-gravity.woff) format('woff2'),
+         url(https://kodomo.fbb.msu.ru/~w0lfgang/fonts/unica-gravity.woff) format('truetype');
+}
+
+.navbar {
+    display: none;
+}
+
+@media (max-width: 133.33333333333334vh) {
+    .cap {
+        display: none;
+    }
+    .navbar {
+        display: block;
+    }
+}
+
+html {
+    margin-top: -42px;
+}
+
+body {
+    margin: 0;
+    line-height: 1.5;
+    background-color: #393a32;
+    background-image: url(https://kodomo.fbb.msu.ru/~w0lfgang/img/background-image.jpg); 
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.cap {
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(49,52,33,0) 100%); background: linear-gradient(180deg, #313421 0%, rgba(0, 0, 0, 0) 100%, rgba(0,0,0,0) 100%);
+    height: 250px;
+    margin-bottom: 7vh;
+}
+
+header {
+    width:100%;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    margin-bottom: -180px;
+}
+
+img {
+    width: 100%;
+}
+
+.content {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    color: white;
+    font-family: unica-gravity;
+    font-size: 2.5531914893617023vh;
+    padding-bottom: 90px;
+    min-height: calc(100vh - 80px);
+}
+
+#table, #table td {
+    border: 1px solid white;
+    text-align: center;
+    width: 50vh;
+    margin-bottom: 1.5em;
+    margin-top: 0.5em;
+    font-size: 2.127659574468085vh; 
+}
+
+.mail {
+    color: white;
+    font-family: Helvetica;
+}
+
+h1 {
+    font-family: gothic;
+    font-size: 7.092198581560283vh;
+    text-align: center;
+    color: white;
+}
+
+h3 a {
+    color: white;
+    font-family: Helvetica;
+    font-size: 2.6vh;
+}
+
+nav {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: auto;
+    list-style: none;
+    font-size: 31pt;
+    text-align: center; 
+    margin-left: 0;
+    margin-right: 0;
+    /* white-space: nowrap; */
+}
+
+nav li {
+    display: inline-block;
+    font-family: gothic;
+    position: relative;
+    right: 50px;
+    margin-top: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+nav li:hover {
+    background: rgba(0, 0, 0, 1); 
+    text-align: center;
+}
+
+nav li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    width: 210px;
+    height: 50px;
+    display: block;
+}
+
+nav li a:hover {
+    color: #ff0033; 
+}
+
+nav li ul {
+    height: 45px;
+    float: left;
+    position: absolute;
+    right: -370px;
+    display: none;
+    width: 850px; 
+    padding-left: 20px;
+}
+
+nav li ul li a {
+    font-size: 25pt;
+    width: 120px; 
+    height: 40px; 
+}
+
+nav li:hover ul {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    font-family: unica-gravity;
+    position: relative;
+    width: 100%;
+    height: 80px;
+}
+
+.navbar {
+    background: linear-gradient(180deg, #313421 0%, rgba(0, 0, 0, 0) 100%, rgba(0,0,0,0) 100%);
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20vh;
+    margin-top: -10px;
+
+}
+
+.navbar #links {
+    display: none;
+}
+
+.navbar #links a {
+    margin: 0;
+}
+
+.navbar a {
+    color: white;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+    font-family: gothic;
+    font-size: 5vh;
+    display: block;
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+.navbar a.icon {
+    padding-top: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 2em;
+    vertical-align: center;
+}
+
+.mainpgbar {
+    color: white;
+}
+
+.text-block {
+    margin: auto;
+    background: rgba(49, 52, 23, 0.6);
+    box-shadow: 0 0 0.5em 0.5em rgba(49, 52, 23, 0.6);
+    border-radius: 2em;
+    margin-right: 1.5em;
+    min-width: 20em;
+}
+

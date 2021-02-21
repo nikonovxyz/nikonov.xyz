@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+    <meta charset="utf-8">
+		<title>Michael Nikonov - Terms</title>
+        <link href="./css/mystyle.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="./favicon.jpg">
+	</head>
+	<body>
+        <header>
+            <div class="cap">
+                <nav>
+                    <ul>
+                        <li id="about"><a href="./about_me.html" style="text-decoration: none;">About me</a></li>
+                        <li id="terms"><a href="./terms.html"style="text-decoration: none;">Terms</a>
+                            <ul>
+                                <li><a href="./term1/term1.html"style="text-decoration: none;">Term 1</a></li>
+                                <li><a href="./term2/term2.html"style="text-decoration: none;">Term 2</a></li>
+                            </ul>
+                        </li>
+                        <li id="fbb"><a href="http://fbb.msu.ru/" target="_blank"style="text-decoration: none;">FBB MSU</a></li>
+                        <li><a href="./index.html" style="text-decoration: none;">Main page</a></li>
+                    </ul>
+                </nav>
+            </div>
+                <div class="navbar">
+                    <a href="https://kodomo.fbb.msu.ru/~w0lfgang/index.html" class="mainpgbar">To Main Page</a>
+                    <div id="links">
+                        <a href="https://kodomo.fbb.msu.ru/~w0lfgang/about_me.html">About me</a>
+                        <a href="https://kodomo.fbb.msu.ru/~w0lfgang/terms.html">Terms</a>
+                        <a href="http://fbb.msu.ru/">FBB MSU</a>
+                    </div>
+                        <a href="javascript:void(0);" class="icon" onclick="mobileNavBar()">
+                            <div style="font-size: 10vh;">≡</div>
+                        </a>
+                </div>
+        </header>
+        <div class="content">
+            <h1>Terms</h1>
+            <br>
+            <h2><a href="./term1/term1.html" style="color: white;">Term1</a></h2>
+            <h2><a href="./term2/term2.html" style="color: white;">Term2</a></h2>
+        </div>
+        <br>
+        <footer>
+            <b>&copy Michael Nikonov, 2021</b>
+        </footer>
+    <script>
+        function mobileNavBar() {
+            var x = document.getElementById("links");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+	</body>
+</html>

@@ -1,2 +1,2 @@
-# nikonov.xyz
-Educational site
+# my-site
+Copy of my educational site
