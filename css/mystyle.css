@@ -18,17 +18,9 @@
     display: none;
 }
 
-@media (max-width: 133.33333333333334vh) {
-    .cap {
-        display: none;
-    }
-    .navbar {
-        display: block;
-    }
-}
-
 html {
     margin-top: -42px;
+    font-size: 1em;
 }
 
 body {
@@ -39,6 +31,15 @@ body {
     background-repeat: no-repeat;
     min-height: 100vh;
     background-size: cover;
+}
+
+@media (max-width: 133.33333333333334vh) {
+    .cap {
+        display: none;
+    }
+    .navbar {
+        display: block;
+    }
 }
 
 .cap {
@@ -215,5 +216,32 @@ footer {
     border-radius: 2em;
     margin-right: 1.5em;
     min-width: 20em;
+}
+
+.desktop-content {
+    margin: 0;
+    text-align: center;
+    vertical-align: top;
+    margin-right: 1.5em;
+    max-width: 30em;
+}
+
+.mobile-content {
+    margin: 0;
+    text-align: center;
+    display: none;
+}
+
+@media (max-width: 133.33333333333334vh) {
+    .desktop-content {
+        display: none;
+        padding-right: 1.5em;
+        max-width: 18em;
+    }
+    .mobile-content {
+        display: block;
+        align: center;
+        max-width: 20em;
+    }
 }
 
