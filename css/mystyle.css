@@ -42,7 +42,8 @@ body {
     background-color: #393a32;
     background-image: url(https://kodomo.fbb.msu.ru/~w0lfgang/img/background-image.jpg); 
     background-repeat: no-repeat;
-    min-height: 100vh;
+    background-attachment: fixed;
+    min-height: 100%;
     background-size: cover;
 }
 
