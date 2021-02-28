@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sphingobium indicum - genome review</title>
+    <link href="../css/mystyle.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="../favicon.jpg">
+</head>
+<body>
+<header>
+    <div class="cap">
+        <nav>
+            <ul>
+                <li id="about"><a href="../about_me.html" style="text-decoration: none;">About me</a></li>
+                <li id="terms"><a href="../terms.html" style="text-decoration: none;">Terms</a>
+                    <ul>
+                        <li><a href="../term1/term1.html" style="text-decoration: none;">Term 1</a></li>
+                        <li><a href="../term2/term2.html" style="text-decoration: none;">Term 2</a></li>
+                    </ul>
+                </li>
+                <li id="fbb"><a href="http://fbb.msu.ru/" target="_blank" style="text-decoration: none;">FBB MSU</a></li>
+                <li><a href="../index.html" style="text-decoration: none;">Main page</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="navbar">
+        <a href="https://kodomo.fbb.msu.ru/~w0lfgang/index.html" class="mainpgbar">To Main Page</a>
+        <div id="links">
+            <a href="https://kodomo.fbb.msu.ru/~w0lfgang/about_me.html">About me</a>
+            <a href="https://kodomo.fbb.msu.ru/~w0lfgang/terms.html">Terms</a>
+            <a href="http://fbb.msu.ru/">FBB MSU</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="mobileNavBar()">
+            <div style="font-size: 10vh;">≡</div>
+        </a>
+    </div>
+</header>
+<div class="content" align="center"  style="font-family: Helvetica;">
+    <h1>Sphingobium indicum B90A. Genome review</h1>
+    <section class="text-block">
+    <h2>АННОТАЦИЯ</h2>
+    <p>Данный обзор посвящен геному штамма B90A альфа-протеобактерии Sphingobium indicum. В данной работе был проведен анализ GC-состава, типов генов, k-меров, была построена диаграмма длин генов, определены координаты генов рибосомных белков и рРНК.</p>
+    </section>
+    <section class="text-block">
+    <h2>1. ВВЕДЕНИЕ</h2>
+    <p>Sphingobium indicum - вид альфа-протеобактерий из семейства Sphingomonadaceae, живущий в почве. Отличительной чертой семейства является наличие гликосфинголипидов на внешней мембране[1], чем и обязано название семейства. Особенностью данного вида является способность метаболизировать гексахлороциклогексан (HCH)[2]. В данной работе был исследован геном штамма Sphingobium indicum B90A, который составляет примерно 3945 килобаз.</p>
+    </section>
+    <section class="text-block">
+    <h2>2. МАТЕРИАЛЫ И МЕТОДЫ</h2>
+    <p>Данные о геноме были получены из открытой библиотеки NCBI[3]. Для анализа данных была использована программа LibreOffice Calc, а также применялись скрипты, написанные на Python. Визуализация полученной информации производилась также в LibreOffice.</p>
+    </section>
+    <section class="text-block">
+    <h2>3. РЕЗУЛЬТАТЫ И ОБСУЖДЕНИЕ</h2>
+    <p>Геном Sphingobium indicum B90A представлен одной кольцевой хромосомой и тремя плазмидами. ДНК данной бактерии в совокупности составляет 3945926 нуклеотидов точно. Доля гуанина и цитозина (GC) на хромосоме составляет 64.18%, на плазмидах: 64,10%, 65,9%, 62,5%. Из этого следует устойчивость ДНК Sphingobium indicum к денатурации.</p>
+    <div class="scrollbox">
+        <table class="table" class="text-block">
+            <tr>
+                <td rowspan="2"></td>
+                <td colspan="2">Белок</td>
+                <td colspan="5">РНК</td>
+            </tr>
+            <tr>
+                <td>Ген</td>
+                <td>Псевдоген</td>
+                <td>тРНК</td>
+                <td>рРНК</td>
+                <td>тмРНК</td>
+                <td>7SL РНК</td>
+                <td>РНКаза P</td>
+            </tr>
+            <tr>
+                <td>Кол-во</td>
+                <td>3670</td>
+                <td>76</td>
+                <td>52</td>
+                <td>6</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </table>
+    </div>
+    </section>
+    <section class="text-block">
+        <h3>3.1. Анализ k-меров</h3>
+        <p>Наиболее часто встречающимися словами в данном геноме оказались CG, GC, GG, CC, наименее частые слова: TA и TT для k = 2.</p>
+        <table align="center" width="100%">
+            <tr>
+                <td style="text-align: center;">
+                    <img class="illustration" style="width: 30em; height: 20em; text-align: center; max-width: 100%;" src="../img/k2.png">
+                </td>
+                <td class="desktop-table" rowspan="2">
+                    <img class="illustration" style="width: 100%; height: 45%; max-width: 20em;" src="../img/k3.png">
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding: 1em;"><p style="max-width: 30em;">При k = 3 наиболее встречающиеся слова: GCG, CGC и GGC, наиболее редкие: TAA, TAG и GTA.</p></td>
+            </tr>
+            <tr>
+                <td><img class="illustration mobile-table" style="width: 30em;" align="top" src="../img/k3.png"></td>
+            </tr>
+        </table>
+    </section>
+    <section class="text-block">
+        <h3>3.2. Анализ протеома</h3>
+        <table>
+            <tr>
+                <td>
+                    <p>Геном Sphingobium indicum B90A в совокупности содержит 3670 белок-кодирующих генов. Причем 1823 из них лежат на (-)-цепи, что свидетельствует о случайном распределении генов белков по цепям с вероятностью более 90%.</p>
+                </td>
+                <td class="desktop-table">
+                    <img class="illustration" src="../img/protlen.png">
+                </td>
+            </tr>
+                <tr class="mobile-table">
+                    <td>
+                        <img class="illustration" src="../img/protlen.png">
+                    </td>
+                </tr>
+        </table>
+        <p>Среднее значение длины белок-кодирующего гена — 952,5 нуклеотида. Самым длинным геном оказался Tandem 95 repeat protein, составляющий 8851 нуклеотид. Функция белка, который кодирует данный ген, неизвестна, но он содержит повторяющийся VCBS-домен, характерный для родов Vibrio, Colwellia, Bradyrhizobium и Shewanella[4]. Предполагается, что данный домен играет некоторую роль в адгезии[4].</p>
+        </section>
+    <section class="text-block">
+        <h3>3.3. Расположение генов рибосомных белков и рРНК</h3>
+        <p>Ниже представлена таблица координат рибосомных белков и РНК Sphingobium indicum B90A. Видна закономерность расположения генов тРНК: все они располагаются близко друг от друга за исключением копий двух генов рРНК 5S и 23S малой субъединицы рибосомы, находящихся на одной из плазмид (PSRL1).</p>
+        <figure>
+            <br>
+            <figcaption>Таблица координат генов рибосомных белков и рРНК по данным листа S4 таблицы Nikonov-suppl-fin</figcaption>
+            <table class="scientific-table">
+                <tr><th>Название</th><th>Цепь</th><th>Начало</th><th>Конец</th></tr>
+                <tr><td>50S ribosomal protein L7/L12</td><td>+</td><td>39243</td><td>40136</td></tr>
+                <tr><td>50S ribosomal protein L10</td><td>-</td><td>40355</td><td>40735</td></tr>
+                <tr><td>50S ribosomal protein L28</td><td>-</td><td>50927</td><td>51148</td></tr>
+                <tr><td>50S ribosomal protein L27</td><td>-</td><td>241805</td><td>242395</td></tr>
+                <tr><td>50S ribosomal protein L21</td><td>-</td><td>242669</td><td>242938</td></tr>
+                <tr><td>50S ribosomal protein L1</td><td>-</td><td>245812</td><td>247542</td></tr>
+                <tr><td>50S ribosomal protein L11</td><td>-</td><td>247796</td><td>248494</td></tr>
+                <tr><td>30S ribosomal protein S2</td><td>+</td><td>584876</td><td>586699</td></tr>
+                <tr><td>50S ribosomal protein L31</td><td>+</td><td>596274</td><td>597053</td></tr>
+                <tr><td>30S ribosomal protein S4</td><td>+</td><td>923385</td><td>925292</td></tr>
+                <tr><td>30S ribosomal protein S1</td><td>+</td><td>948572</td><td>948943</td></tr>
+                <tr><td>ribosomal protein S18-alanine N-acetyltransferase</td><td>-</td><td>1058237</td><td>1059394</td></tr>
+                <tr><td>50S ribosomal protein L25/general stress protein Ctc</td><td>-</td><td>1129376</td><td>1129951</td></tr>
+                <tr><td>30S ribosomal protein S15</td><td>-</td><td>1348845</td><td>1351820</td></tr>
+                <tr><td>30S ribosomal protein S6</td><td>-</td><td>1380284</td><td>1381204</td></tr>
+                <tr><td>30S ribosomal protein S18</td><td>-</td><td>1381274</td><td>1381855</td></tr>
+                <tr><td>50S ribosomal protein L9</td><td>-</td><td>1381855</td><td>1382748</td></tr>
+                <tr><td>30S ribosomal protein S12 methylthiotransferase RimO</td><td>-</td><td>1636863</td><td>1637798</td></tr>
+                <tr><td>50S ribosomal protein L19</td><td>+</td><td>1823676</td><td>1824713</td></tr>
+                <tr><td>30S ribosomal protein S16</td><td>-</td><td>1826214</td><td>1826981</td></tr>
+                <tr><td>50S ribosomal protein L11 methyltransferase</td><td>-</td><td>1844999</td><td>1846042</td></tr>
+                <tr><td>30S ribosomal protein S20</td><td>-</td><td>1990517</td><td>1991032</td></tr>
+                <tr><td>50S ribosomal protein L34</td><td>+</td><td>2044199</td><td>2044816</td></tr>
+                <tr><td>30S ribosomal protein S21</td><td>-</td><td>2148835</td><td>2149980</td></tr>
+                <tr><td>50S ribosomal protein L15</td><td>+</td><td>2164370</td><td>2165287</td></tr>
+                <tr><td>50S ribosomal protein L30</td><td>+</td><td>2165476</td><td>2165766</td></tr>
+                <tr><td>30S ribosomal protein S5</td><td>+</td><td>2165763</td><td>2166074</td></tr>
+                <tr><td>50S ribosomal protein L18</td><td>+</td><td>2166089</td><td>2166982</td></tr>
+                <tr><td>50S ribosomal protein L6</td><td>+</td><td>2166979</td><td>2167653</td></tr>
+                <tr><td>30S ribosomal protein S8</td><td>+</td><td>2167650</td><td>2168267</td></tr>
+                <tr><td>30S ribosomal protein S14</td><td>-</td><td>2168371</td><td>2169240</td></tr>
+                <tr><td>50S ribosomal protein L5</td><td>-</td><td>2169242</td><td>2170642</td></tr>
+                <tr><td>50S ribosomal protein L24</td><td>-</td><td>2170685</td><td>2171311</td></tr>
+                <tr><td>50S ribosomal protein L14</td><td>-</td><td>2171308</td><td>2171718</td></tr>
+                <tr><td>30S ribosomal protein S17</td><td>-</td><td>2171791</td><td>2172621</td></tr>
+                <tr><td>50S ribosomal protein L29</td><td>-</td><td>2172658</td><td>2173233</td></tr>
+                <tr><td>50S ribosomal protein L16</td><td>-</td><td>2173361</td><td>2174281</td></tr>
+                <tr><td>30S ribosomal protein S3</td><td>-</td><td>2174399</td><td>2176066</td></tr>
+                <tr><td>50S ribosomal protein L22</td><td>-</td><td>2176085</td><td>2177098</td></tr>
+                <tr><td>30S ribosomal protein S19</td><td>+</td><td>2177389</td><td>2177970</td></tr>
+                <tr><td>50S ribosomal protein L2</td><td>+</td><td>2177974</td><td>2178711</td></tr>
+                <tr><td>50S ribosomal protein L23</td><td>+</td><td>2178708</td><td>2179109</td></tr>
+                <tr><td>50S ribosomal protein L4</td><td>+</td><td>2179141</td><td>2180034</td></tr>
+                <tr><td>50S ribosomal protein L3</td><td>+</td><td>2180058</td><td>2181155</td></tr>
+                <tr><td>30S ribosomal protein S10</td><td>-</td><td>2181472</td><td>2182032</td></tr>
+                <tr><td>30S ribosomal protein S7</td><td>+</td><td>2183466</td><td>2185337</td></tr>
+                <tr><td>30S ribosomal protein S12</td><td>+</td><td>2185384</td><td>2186631</td></tr>
+                <tr><td>30S ribosomal protein S9</td><td>+</td><td>2187111</td><td>2187575</td></tr>
+                <tr><td>50S ribosomal protein L13</td><td>+</td><td>2187581</td><td>2188975</td></tr>
+                <tr><td>50S ribosomal protein L32</td><td>+</td><td>2721800</td><td>2722306</td></tr>
+                <tr><td>50S ribosomal protein L36</td><td>-</td><td>2816552</td><td>2817379</td></tr>
+                <tr><td>30S ribosomal protein S13</td><td>-</td><td>2881988</td><td>2882482</td></tr>
+                <tr><td>30S ribosomal protein S11</td><td>-</td><td>2882472</td><td>2882687</td></tr>
+                <tr><td>50S ribosomal protein L17</td><td>+</td><td>2883435</td><td>2883908</td></tr>
+                <tr><td>30S ribosomal protein S14</td><td>-</td><td>3070861</td><td>3071475</td></tr>
+                <tr><td>50S ribosomal protein L33</td><td>-</td><td>3151721</td><td>3152635</td></tr>
+                <tr><td>5S ribosomal RNA</td><td>-</td><td>3196033</td><td>3196947</td></tr>
+                <tr><td>23S ribosomal RNA</td><td>-</td><td>3196947</td><td>3197657</td></tr>
+                <tr><td>16S ribosomal RNA</td><td>-</td><td>3199708</td><td>3200415</td></tr>
+                <tr><td>50S ribosomal protein L20</td><td>+</td><td>3331826</td><td>3332884</td></tr>
+                <tr><td>50S ribosomal protein L35</td><td>+</td><td>3332881</td><td>3333405</td></tr>
+                <tr><td>5S ribosomal RNA</td><td>+</td><td>3649427</td><td>3650098</td></tr>
+                <tr><td>23S ribosomal RNA</td><td>+</td><td>3650261</td><td>3650716</td></tr>
+                <tr><td>16S ribosomal RNA</td><td>+</td><td>3651903</td><td>3652793</td></tr>
+            </table>
+        </figure>
+    </section>
+    <section class="text-block">
+        <h2>ЗАКЛЮЧЕНИЕ</h2>
+        <p>Согласно результатам исследования геном Sphingobium indicum B90A составляет 3945926 пар нуклеотидо точно. Доля GC в ДНК составляет 64.18%, что может свидетельствовать о ее устойчивости к денатурации. Согласно результату анализа k-меров наиболее частыми словами оказались CG, GC, GG, CC (для k=2), GCG, CGC и GGC (k=3), наименее частыми - TA и TT (k=2), TAA, TAG и GTA (K=3). Среди 3670 белок- кодирующих генов закономерности расположения по цепям не наблюдалось. Средняя длина белок-кодирующего гена составляет 952,5 нуклеотидов. Саммы длинным геном (8851 пар нуклеотидов) оказался ген Tandem 95 repeat protein, кодирующий белок с неизвестной функцией с VCBS-доменом, возможно, участвующий в адгезии. Закономерностей в расположении рибосомных белков не наблюдалось, но гены рРНК сконцентрированы в одной области кроме копий двух генов рРНк малой субъединицы, находящихся на плазмиде.</p>
+    </section>
+    <section class="text-block">
+        <h2>БИБЛИОГРАФИЯ</h2>
+        <p>[1] Garrity GM, Brenner DJ, Krieg NR et al. (2005). "Bergey's Manual of
+            Systematic Bacteriology. Two The Proteobacteria, Part C: The Alpha-, Beta-, Delta-,
+            and Epsilonproteobacteria". New York, New York: Springer.</p>
+        <p>[2] Pal, R. (2005). "Hexachlorocyclohexane-degrading bacterial
+            strains
+            Sphingomonas paucimobilis B90A, UT26 and Sp+, having similar
+            lin genes,
+            represent three distinct species, Sphingobium indicum sp. nov.,
+            Sphingobium
+            japonicum sp. nov. and Sphingobium francense sp. nov., and
+            reclassification of
+            [Sphingomonas] chungbukensis as Sphingobium chungbukense
+            comb. nov".
+            International Journal of Systematic and Evolutionary
+            Microbiology.</p>
+        <p>[3] Директория с данными NCBI о геноме Sphingobium
+            indicum B90A
+            ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/264/945/ GCF_000264945.2_ASM26494v2</p>
+        <p>[4] Данные NCBI по домену VCBS
+            https://www.ncbi.nlm.nih.gov/Structure/cdd/TIGR01965</p>
+        </section>
+    <section class="text-block">
+        <h2>СОПРОВОДИТЕЛЬНЫЕ МАТЕРИАЛЫ</h2>
+        <p>1. Таблица Nikonov-suppl-fin.xlsx
+            kodomo.fbb.msu.ru/~w0lfgang/term1/Nikonov_suppl_fin.xlsx</p>
+        <p>2. Скрипты Python
+            https://kodomo.fbb.msu.ru/~w0lfgang/term1/scripts</p>
+        </section>
+    </div>
+<footer>
+    <b>&copy Michael Nikonov, 2021</b>
+</footer>
+<script>
+  function mobileNavBar() {
+    var x = document.getElementById("links");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+</script>
+</body>
+</html>
+</body>
+</html>
