@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+    <meta charset="utf-8">
+		<title>Michael Nikonov - About me</title>
+        <link href="../../css/mystyle.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="../../img/favicon.jpg">
+	</head>
+	<body onload="myFunction()">
+        <div id="loader"></div>
+        <header>
+            <div class="cap">
+                <nav>
+                    <ul>
+                        <li id="about"><a href="../../about_me" style="text-decoration: none;">About me</a></li>
+                        <li id="terms"><a href="../../terms" style="text-decoration: none;">Terms</a>
+                            <ul>
+                                <li><a href="../../term1" style="text-decoration: none;">Term 1</a></li>
+                                <li><a href="../../term2" style="text-decoration: none;">Term 2</a></li>
+                            </ul>
+                        </li>
+                        <li id="fbb"><a href="http://fbb.msu.ru/" target="_blank" style="text-decoration: none;">FBB MSU</a></li>
+                        <li><a href="../.." style="text-decoration: none;">Main page</a></li>
+                    </ul>
+                </nav>
+            </div>
+                <div class="navbar">
+                    <a href="../.." class="mainpgbar">To Main Page</a>
+                    <div id="links">
+                        <a href="../../about_me">About me</a>
+                        <a href="../../terms">Terms</a>
+                        <a href="http://fbb.msu.ru/">FBB MSU</a>
+                    </div>
+                        <a href="javascript:void(0);" class="icon" onclick="mobileNavBar()">
+                            <div style="font-size: 10vh;">≡</div>
+                        </a>
+                </div>
+        </header>
+        <div class="content animate-bottom" align="center" style="display:none;" id="myDiv">
+            <br class="mobile-content">
+            <h1>3d Structure of protein</h1>
+            <br>
+            <table style="border-collapse: collapse; padding: 0;">
+                <tr>
+                <td class="desktop-content" rowspan="3" width="70%">
+                    <figure>
+                        <figcaption>Hydrogen bonds of backbone atoms. Length and N-H-O angle.</figcaption>
+                        <table class="scientific-table text-block">
+                            <tr><th colspan="3">α-helix</th></tr>
+                            <tr><td>#</td><td>Bond length, Å</td><td>N-H-O angle, °</td></tr>
+                            <tr><td>N(127ARG)-O(123VAL)</td><td>2.86</td><td>164.0</td></tr>
+                            <tr><td>N(128ALA)-O(124ASP)</td><td>2.91</td><td>160.4</td></tr>
+                            <tr><td>N(129ALA)-O(125VAL)</td><td>3.05</td><td>142.5</td></tr>
+                            <tr><td>N(126LEU)-O(122GLY)</td><td>3.02</td><td>159.4</td></tr>
+                            <tr><td>N(131VAL)-O(126LEU)</td><td>2.98</td><td>164.6</td></tr>
+                            <tr><td>N(94ALA)-O(90LYS)</td><td>3.03</td><td>160.7</td></tr>
+                            <tr><td>N(95ALA)-O(91LYS)</td><td>2.82</td><td>150.9</td></tr>
+                            <tr><td>Average</td><td>2.95</td><td>157.5</td></tr>
+                            <tr><th colspan="3">ß-layer</th></tr>
+                            <tr><td>#</td><td>Bond length, Å</td><td>N-H-O angle, °</td></tr>
+                            <tr><td>N(60GLN)-O(67TYR)</td><td>2.97</td><td>149.0</td></tr>
+                            <tr><td>N(69SER)-O(58ALA)</td><td>3.08</td><td>158.8</td></tr>
+                            <tr><td>N(71GLY)-O(56HIS)</td><td>2.89</td><td>151.7</td></tr>
+                            <tr><td>N(81LEU)-O(74VAL)</td><td>2.89</td><td>175.0</td></tr>
+                            <tr><td>N(75ARG)-O(52GLY)</td><td>2.81</td><td>164.4</td></tr>
+                            <tr><td>N(83ILE)-O(72LEU)</td><td>2.77</td><td>179.0</td></tr>
+                            <tr><td>N(56HIS)-O(71GLY)</td><td>3.00</td><td>154.8</td></tr>
+                            <tr><td>Average</td><td>2.92</td><td>161.8</td></tr>
+                            <tr style="border-top: 1px solid white"><td>Total Average</td><td>2.94</td><td>159.7</td></tr>
+                        </table>
+                    </figure>
+                </td>
+                <td>
+                    <div class="jmol" style="vertical-align: top"></div>
+                    <table align="center">
+                        <td><div class='jmolStart'></div></td>
+                        <td><div class='jmolResume'></div></td>
+                    </table>
+                </td>
+                </tr>
+                <tr class="mobile-content">
+                <td>
+                    <figure>
+                        <figcaption>Hydrogen bonds of backbone atoms. Length and N-H-O angle.</figcaption>
+                        <table class="scientific-table text-block">
+                            <tr><th colspan="3">α-helix</th></tr>
+                            <tr><td>#</td><td>Bond length, Å</td><td>N-H-O angle, °</td></tr>
+                            <tr><td>N(127ARG)-O(123VAL)</td><td>2.86</td><td>164.0</td></tr>
+                            <tr><td>N(128ALA)-O(124ASP)</td><td>2.91</td><td>160.4</td></tr>
+                            <tr><td>N(129ALA)-O(125VAL)</td><td>3.05</td><td>142.5</td></tr>
+                            <tr><td>N(126LEU)-O(122GLY)</td><td>3.02</td><td>159.4</td></tr>
+                            <tr><td>N(131VAL)-O(126LEU)</td><td>2.98</td><td>164.6</td></tr>
+                            <tr><td>N(94ALA)-O(90LYS)</td><td>3.03</td><td>160.7</td></tr>
+                            <tr><td>N(95ALA)-O(91LYS)</td><td>2.82</td><td>150.9</td></tr>
+                            <tr><td>Average</td><td>2.95</td><td>157.5</td></tr>
+                            <tr><th colspan="3">ß-layer</th></tr>
+                            <tr><td>#</td><td>Bond length, Å</td><td>N-H-O angle, °</td></tr>
+                            <tr><td>N(60GLN)-O(67TYR)</td><td>2.97</td><td>149.0</td></tr>
+                            <tr><td>N(69SER)-O(58ALA)</td><td>3.08</td><td>158.8</td></tr>
+                            <tr><td>N(71GLY)-O(56HIS)</td><td>2.89</td><td>151.7</td></tr>
+                            <tr><td>N(81LEU)-O(74VAL)</td><td>2.89</td><td>175.0</td></tr>
+                            <tr><td>N(75ARG)-O(52GLY)</td><td>2.81</td><td>164.4</td></tr>
+                            <tr><td>N(83ILE)-O(72LEU)</td><td>2.77</td><td>179.0</td></tr>
+                            <tr><td>N(56HIS)-O(71GLY)</td><td>3.00</td><td>154.8</td></tr>
+                            <tr><td>Average</td><td>2.92</td><td>161.8</td></tr>
+                            <tr style="border-top: 1px solid white"><td>Total Average</td><td>2.94</td><td>159.7</td></tr>
+                        </table>
+                    </figure>
+                </td>
+                </tr>
+                <tr>
+                <td style="vertical-align: top">
+                    <figure>
+                        <figcaption>Hydrogen bonds average parameters according to researches[1].</figcaption>
+                        <table class="scientific-table text-block">
+                            <tr><th>Parameter</th><th>Observed</th><th>Expected</th></tr>
+                            <tr><td>Length, Å</td><td>2.92</td><td>< 3.5</td></tr>
+                            <tr><td>N-H-O angle, °</td><td>161.8</td><td>160</td></tr>
+                            <tr><td colspan="3"><br>Average parameters of hydrogen bonds are typical and are within acceptable values for proteins.</td></tr>
+                        </table>
+                    </figure>
+                </td>
+                </tr>
+            </table>
+            <p class="links">[1]Roderick E Hubbard  Muhammad Kamran Haider: "Hydrogen Bonds in Proteins: Role and Strength", 2010. https://doi.org/10.1002/9780470015902.a0003011.pub2</p>
+            <br>
+            <footer>
+                <b>&copy Michael Nikonov, 2021</b>
+            </footer>
+        </div>
+        <script type="text/javascript" src="//vsb.fbb.msu.ru/share/jmol/jsmol/JSmol.min.js"></script>
+        <script type="text/javascript" src="../scripts/jmol/pr3.js"></script>
+        <script>
+          var myVar;
+          function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+          }
+
+          function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+          }
+        </script>
+    </body>
+</html>
+
+
